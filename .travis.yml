@@ -3,3 +3,6 @@ compiler:
   - gcc
 before_install:
   - test -n $CC && unset CC
+script: 
+   - gcc -o file TinkerCad_wiper.ino  
+   - ./file
